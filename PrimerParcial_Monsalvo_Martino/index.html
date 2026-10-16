@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Primer parcial</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Primer parcial</h1>
+        <p>Division 132</p>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main>
+        <h2 id="users">Users</h2>
+        <hr>
+        <section class="pagina-principal">
+
+            <div class="filtros">
+
+                <div class="filtros-rapidos">
+
+                    <input type="radio" id="active" name="estado" value="active" checked>
+                    <label for="active">Active</label>
+                    
+                    <input type="radio" id="inactive" name="estado" value="inactive">
+                    <label for="inactive">Inactive</label>
+                    
+                    <input type="radio" id="all" name="estado" value="all">
+                    <label for="all">All</label>
+                </div>
+
+                    <input type="text" class="buscador" placeholder="Search Users" id="barra-busqueda">
+            </div>
+
+            <div class="botones">
+
+                <button id="create" onclick="">CREATE</button>
+                <button id="desactivate" onclick="">DEACTIVATE</button>
+                <button id="reset" onclick="">RESET PASSWORD</button>
+            </div>
+
+
+            <div id="users-container"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="nombre-apellido">Martino Monsalvo</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
